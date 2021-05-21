@@ -1,7 +1,9 @@
 import './style.css'
 import {Button, Card, TextField} from "@material-ui/core";
+import { useHistory } from 'react-router';
 
 const Register = () => {
+const router =useHistory()
     return (
         <div className={'register-container'}>
             <Card className={'register-card'}>
@@ -21,6 +23,7 @@ const Register = () => {
                 <Button variant="contained" color="primary">
                     Envoyer
                 </Button>
+                <span onClick={()=>router.push('/login')}>Login</span>
             </Card>
         </div>
     )
