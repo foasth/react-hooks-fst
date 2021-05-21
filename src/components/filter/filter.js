@@ -1,7 +1,6 @@
 import './style.css'
 import {Button, TextField} from "@material-ui/core";
 import { useEffect, useState } from 'react';
-import Swal from 'sweetalert2';
 
 
 const Filter=(props)=>{
@@ -33,7 +32,8 @@ useEffect(()=>{
                         onChange={event => setRating(event.target.value)}
                         variant="outlined" />
             <Button onClick={filter} variant="contained"
-                    color="primary">
+                    color="primary"
+                    style={{background:'purple'}}>
                 Filter
             </Button>
         </div>

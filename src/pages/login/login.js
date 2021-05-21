@@ -1,22 +1,15 @@
 import './style.css'
 import {Button, Card, TextField} from "@material-ui/core";
-import {useState} from "react";
 
-const AddMovie = () => {
-    const [title, setTitle] = useState('')
+const Login = () => {
     return (
         <div className={'register-container'}>
             <Card className={'register-card'}>
-                <h1>NEW MOVIE</h1>
-                <TextField label="Title"
-                           type="search"
-                           value={title}
-                           onChange={event => setTitle(event.target.value)}
-                           variant="outlined"/>
-                <TextField label="Description"
+                <h1>Login</h1>
+                <TextField label="Email"
                            type="search"
                            variant="outlined"/>
-                <TextField label="Rating"
+                <TextField label="Mot de passe"
                            type="search"
                            variant="outlined"/>
                 <Button variant="contained" color="primary">
@@ -26,4 +19,4 @@ const AddMovie = () => {
         </div>
     )
 }
-export default AddMovie
+export default Login

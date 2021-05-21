@@ -1,7 +1,8 @@
 import Filter from "../../components/filter/filter";
 import MovieList from "../../components/movielist/movielist";
 import {useState} from "react";
-
+import Navbar from "../../components/navbar/navbar";
+import './style.css'
 const moviesList = [
     {
         title: 'Movie 01',
@@ -31,7 +32,8 @@ const moviesList = [
 const Movie = () => {
     const [movies, setMovies] = useState(moviesList)
     return (
-        <>
+        <>  
+            <Navbar/>
             <Filter movies={movies} setMovies={setMovies} moviesList={moviesList}/>
             <MovieList moviesprops={movies}/>
         </>
