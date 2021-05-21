@@ -7,7 +7,7 @@ const router = useHistory()
     return (
         <div className={'register-container'}>
             <Card className={'register-card'}>
-                <h1>Login</h1>
+                <h1>LOGIN</h1>
                 <TextField label="Email"
                            type="search"
                            variant="outlined"/>
