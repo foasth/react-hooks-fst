@@ -54,7 +54,7 @@ const moviesList = [
     },
     {
         title: 'Princess Mononoke',
-        description: "On a journey to find the cure for a Tatarigami's curse, Ashitaka finds himself in the middle of a war between the forest gods and Tatara, a mining colony. In this quest he also meets San, the Mononoke Hime.",
+        description: "On a journey to find the cure for a Tatarigami's curse, Ashitaka finds himself in the middle of a war between the forest gods and Tatara, a mining colony.",
         rating: 5,
         posterurl: F07
     },
