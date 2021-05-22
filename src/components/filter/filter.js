@@ -33,7 +33,7 @@ useEffect(()=>{
                         variant="outlined" />
             <Button onClick={filter} variant="contained"
                     color="primary"
-                    style={{background:'purple'}}>
+                    style={{background:'black'}}>
                 Filter
             </Button>
         </div>
