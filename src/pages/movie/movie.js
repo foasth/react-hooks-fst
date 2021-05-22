@@ -42,7 +42,7 @@ const moviesList = [
     },
     {
         title: 'Goodfellas',
-        description: 'The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners Jimmy Conway and Tommy DeVito in the Italian-American crime syndicate.',
+        description: 'The story of Henry Hill and his life in the mob, covering his mob partners Jimmy Conway and Tommy DeVito in the Italian-American crime syndicate.',
         rating: 4,
         posterurl: F05
     },
