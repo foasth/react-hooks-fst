@@ -19,9 +19,9 @@ const MovieCard = (props) => {
                 <img src={movieprops.posterurl}/>
             </div>
             <div className={'info-film'}>
-            <span>Title : {movieprops.title} </span>
-            <span>Description : {movieprops.description} </span>
-            <span>Rating : {movieprops.rating}</span>
+            <span><b>Title :</b> {movieprops.title} </span>
+            <span><b>Description :</b> {movieprops.description} </span>
+            <span><b>Rating :</b> {movieprops.rating}</span>
             </div>
 
             <div className={'info-rating'}>
