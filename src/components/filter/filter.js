@@ -1,6 +1,7 @@
 import './style.css'
 import {Button, TextField} from "@material-ui/core";
 import { useEffect, useState } from 'react';
+import Logo from "../../asset/logo.PNG";
 
 
 const Filter=(props)=>{
@@ -22,7 +23,11 @@ useEffect(()=>{
     filter();
 },[title,rating])
     return(
-        <div className={'h-filter'}>
+        <div className={'t-filter'}>
+            <div className={'logo-img'}>
+                <img src={Logo}/>
+            </div>
+            <div className={'h-filter'}>
             <TextField  label="Title"
                         value={title}
                         onChange={event => setTitle(event.target.value)} 
@@ -36,6 +41,7 @@ useEffect(()=>{
                     style={{background:'black'}}>
                 Filter
             </Button>
+            </div>
         </div>
     )
 }
