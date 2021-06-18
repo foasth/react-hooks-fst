@@ -1,11 +1,13 @@
 import './style.css'
 import {Button, Card, TextField} from "@material-ui/core";
 import { useHistory } from 'react-router';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import API from '../../api/api';
 import Swal from 'sweetalert2';
+import AuthContext from '../../context/auth.context';
 
 const Login = () => {
+    const auth = useContext(AuthContext)
     const [email,setEmail]=useState()
     const [password,setPassword]=useState()
     const send3 =()=>{
@@ -15,6 +17,7 @@ const Login = () => {
                     if (res.data.error) {
                         Swal.fire(res.data.msg, '', 'warning')
                     } else {
+                        auth.login()
                         Swal.fire('', '', 'success')
                     .then(ok => {
                         if (ok.isConfirmed) {
