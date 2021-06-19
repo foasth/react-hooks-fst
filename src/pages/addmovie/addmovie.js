@@ -51,7 +51,7 @@ const AddMovie = () => {
                            onChange={event => setRating(event.target.value)}
                            variant="outlined"/>
                  <TextField label="Poster"
-                           type="file"
+                           type="search"
                            value={poster}
                            onChange={event => setPoster(event.target.value)}
                            variant="outlined"/>

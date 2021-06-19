@@ -25,6 +25,7 @@ import AuthContext from './context/auth.context';
                     <Route path="/register" component={Register}/>
                     <Route path="/login" component={Login}/>
                     <Route component={Login}/>
+
                         </Switch>
                     )}
                     {auth.auth &&(
@@ -35,6 +36,7 @@ import AuthContext from './context/auth.context';
                     <Route path="/movie" component={Movie}/>
                     <Route path="/addmovie" component={AddMovie}/>
                     <Route component={Movie}/>
+                    <Route component={P404}/>
                         </Switch>
                     )}
                   
