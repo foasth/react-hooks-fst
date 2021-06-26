@@ -1,9 +1,13 @@
-const User = require('../schemas/user')
+const User = require('../schemas/user');
+const bcrypt = require('bcrypt');
+const saltRounds = 10;
 
 
-module.exports.REGISTER =(req,res)=>{
+module.exports.REGISTER = async (req,res)=>{
     
     console.log(req.body)
+    const pwdHashed = await bcrypt.hash(req.body.password,saltRounds);
+    req.body.password = pwdHashed
     if(!req.body.firstName){
         return res.send({error:true,msg:'First name required'})
     }
